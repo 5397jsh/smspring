@@ -19,13 +19,14 @@ class SelectTests {
     void contextLoads() {
         try {
             List<Marker> list = markerService.get();
-            list.forEach(System.out::println);
+            list.forEach((data)->{log.info(data.toString());});
 
             Marker marker = markerService.get(101);
             log.info(marker.toString());
 
-            List<Marker> list2 = markerService.get();
-            list.forEach(System.out::println);
+            List<Marker> list2 = markerService.findByLoc(200);
+            list2.forEach((data)->{log.info(data.toString());});
+
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

@@ -33,6 +33,8 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 
+    // Properties Encryption
+    implementation 'com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.3'
 
     //tomcat
     implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
