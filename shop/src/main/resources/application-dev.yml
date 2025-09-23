@@ -9,13 +9,24 @@ server:
     encoding:
       charset: UTF-8
       force: true
+
 spring:
   mvc:
     view:
       prefix: /views/
       suffix: .jsp
+    messages:
+      basename: messages/message
+      encoding: utf-8
+      cache-duration: 10
+      fallback-to-system-locale: false
+  config:
+    import: optional:file:.env[.properties]
+
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/shopdb?serverTimezone=Asia/Seoul
+    #url: jdbc:mysql://127.0.0.1:3306/shopdb?serverTimezone=Asia/Seoul
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    url: jdbc:log4jdbc:mysql://127.0.0.1:3306/shopdb?characterEncoding=utf8
     username: smuser
     password: ENC(3vKBrJa0DnD5JGSi/IVxdg==)
 mybatis:
@@ -29,5 +40,13 @@ logging:
 
 # Application Config
 app:
+  dir:
+    imgsdir: file:///C:/smspring/imgs/     # 화면 출력 용
+    uploadimgsdir: C:/smspring/imgs/    # 파일 Write 용
+    logsdir: file:///c:/smspring/logs # 화면 출력 용
+    logsdirRead: C:/smspring/logs/   #
   key:
     skey: ${MY_KEY}
+    algo: PBEWithMD5AndDES
+    wkey: ENC(UlONaH/KRz3Ab+adEm790I5ObQ4/uijKNLsV8hRK17/IGMTXuqCtq/RFtNgEcc+sceLqZBy/1BXTlTmx2aXMua7cKEeloIh8jFKktgOjATh3Kai3HwffbELSEtwE8+1+bKuTYWSdE2/G4XnGlfcDFg==)
+    owkey: ENC(bun8lU8d519fG9Ryklk7bizoEKYgRGhDtODRybb9Vbw1Nd6Fhw1hpfNhOF5NmBpV)
