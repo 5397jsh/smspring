@@ -1,25 +1,46 @@
 package edu.sm.app.service;
 
 import edu.sm.app.dto.Content;
-import edu.sm.app.mapper.ContentMapper;
-import org.springframework.beans.factory.annotation.Autowired;
+import edu.sm.app.dto.Marker;
+import edu.sm.app.dto.Search;
+import edu.sm.app.repository.ContentRepository;
+import edu.sm.common.frame.SmService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+@Service
+@RequiredArgsConstructor
+public class ContentService implements SmService<Content, Integer> {
 
-@Service // 이 클래스가 비즈니스 로직을 처리하는 Service 계층의 컴포넌트임을 나타냅니다.
-public class ContentService {
+    final ContentRepository contentRepository;
 
-    @Autowired
-    private ContentMapper contentMapper; // MyBatis 매퍼 인터페이스 주입
+    List<Content> findByAddrAndType(Search search){
+        return contentRepository.findByAddrAndType(search);
+    }
 
-    /**
-     * 병원 목록을 조회하는 비즈니스 로직을 수행합니다.
-     * @return DB에서 조회한 병원 목록
-     */
-    public List<Content> getHospitals() {
-        // Mapper를 호출하여 loc 코드가 100인 데이터를 조회합니다.
-        // (제공해주신 SQL insert 구문에서 병원의 loc가 100인 것을 기반으로 합니다.)
-        return contentMapper.findByLoc(100);
+    @Override
+    public void register(Content content) throws Exception {
+
+    }
+
+    @Override
+    public void modify(Content content) throws Exception {
+
+    }
+
+    @Override
+    public void remove(Integer integer) throws Exception {
+
+    }
+
+    @Override
+    public List<Content> get() throws Exception {
+        return List.of();
+    }
+
+    @Override
+    public Content get(Integer integer) throws Exception {
+        return null;
     }
 }

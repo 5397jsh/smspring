@@ -3,6 +3,7 @@ package edu.sm.controller;
 import com.github.pagehelper.PageInfo;
 import edu.sm.app.dto.Product;
 import edu.sm.app.dto.ProductSearch;
+import edu.sm.app.service.CateService;
 import edu.sm.app.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -19,12 +20,14 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ProductController {
     final ProductService productService;
+    final CateService cateService;
 
     String dir="product/";
 
 
     @RequestMapping("/add")
-    public String add(Model model) {
+    public String add(Model model) throws Exception {
+        model.addAttribute("cate",cateService.get());
         model.addAttribute("center",dir+"add");
         return "index";
     }

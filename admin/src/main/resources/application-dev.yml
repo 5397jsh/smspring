@@ -30,10 +30,12 @@ logging:
 
 # Application Config
 app:
+  url:
+    sse: http://127.0.0.1:8088/
   dir:
     imgsdir: file:///C:/smspring/imgs/     # 화면 출력 용
     uploadimgsdir: C:/smspring/imgs/    # 파일 Write 용
-    logsdir: file:///c:/smspring/logs # 화면 출력 용
+    logsdir: file:///c:/smspring/logs/ # 화면 출력 용
     logsdirRead: C:/smspring/logs/   # Read 용
   key:
     skey: ${MY_KEY}

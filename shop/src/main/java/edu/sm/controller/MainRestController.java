@@ -50,4 +50,3 @@ public class MainRestController {
         return "OK";
     }
 }
-

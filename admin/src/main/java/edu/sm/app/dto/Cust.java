@@ -2,6 +2,7 @@ package edu.sm.app.dto;
 
 import lombok.*;
 
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 @AllArgsConstructor

@@ -20,12 +20,16 @@ public class SearchController {
 
     @RequestMapping("/custsearch")
     public String custsearch(Model model, CustSearch  custSearch) throws Exception {
+        model.addAttribute("searchcust", custSearch);
+        model.addAttribute("searchtype", "cust");
         model.addAttribute("clist", custService.searchCustList(custSearch));
         model.addAttribute("center","cust/get");
         return "index";
     }
     @RequestMapping("/productsearch")
     public String productsearch(Model model, ProductSearch  productSearch) throws Exception {
+        model.addAttribute("searchproduct", productSearch);
+        model.addAttribute("searchtype", "product");
         model.addAttribute("plist", productService.searchProductList(productSearch));
         model.addAttribute("center","product/get");
         return "index";

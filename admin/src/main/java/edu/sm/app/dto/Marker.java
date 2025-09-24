@@ -1,5 +1,4 @@
 package edu.sm.app.dto;
-
 import lombok.*;
 
 @AllArgsConstructor
@@ -8,7 +7,6 @@ import lombok.*;
 @Getter
 @Setter
 @Builder
-
 public class Marker {
     int target;
     String title;

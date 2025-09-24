@@ -14,7 +14,7 @@ public class JasyptConfig {
 
     @Value("${app.key.skey}")
     private String skey;
-    private static final String ALGORITHM = "PBEWithMD5AndDES";
+    private static final String ALGORITHM =  "PBEWithMD5AndDES";
 
     @Bean("jasyptStringEncryptor")
     public StringEncryptor stringEncryptor() {

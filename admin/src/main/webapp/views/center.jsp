@@ -3,9 +3,54 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <script>
-    $(function(){
+    let center = {
+        adminId:null,
+        init:function(){
+            <c:if test="${sessionScope.admin.adminId != null}">
+            this.adminId = '${sessionScope.admin.adminId}';
+            this.connect();
+            </c:if>
+        },
+        connect:function(){
+            // http://127.0.0.1:8088/connect/admin
+            let url = '${sseUrl}'+'connect/'+this.adminId ;
+            const sse = new EventSource(url);
+            sse.addEventListener('connect', (e) => {
+                const { data: receivedConnectData } = e;
+                console.log('connect event data: ',receivedConnectData);  // "connected!"
+            });
+            sse.addEventListener('count', e => {
+                const { data: receivedCount } = e;
+                console.log("count :",receivedCount);
+                $('#count').html(receivedCount);
+            });
+            sse.addEventListener('adminmsg', e => {
+                const { data: receivedData } = e;
+                console.log("count event data",receivedData);
+                console.log("count event data2",JSON.parse(receivedData).content1);
+                this.display(JSON.parse(receivedData));
+            });
+        },
+        display:function(data){
+            $('#msg1').text(data.content1);
+            $('#msg2').text(data.content2);
+            $('#msg3').text(data.content3);
+            $('#msg4').text(data.content4);
+            $('#progress1').css('width',data.content1/100*100+'%');
+            $('#progress1').attr('aria-valuenow',data.content1/100*100);
+            $('#progress2').css('width',data.content2/1000*100+'%');
+            $('#progress2').attr('aria-valuenow',data.content2/1000*100);
+            $('#progress3').css('width',data.content3/500*100+'%');
+            $('#progress3').attr('aria-valuenow',data.content3/500*100);
+            $('#progress4').css('width',data.content4/10*100+'%');
+            $('#progress4').attr('aria-valuenow',data.content4/10*100);
+        }
+    };
 
+    $(function(){
+        center.init();
     });
+
 </script>
 
 <!-- Begin Page Content -->
@@ -19,7 +64,7 @@
     </div>
 
     <!-- Content Row -->
-    <div class="row">
+    <div class="row d-none d-md-flex">
 
         <!-- Earnings (Monthly) Card Example -->
         <div class="col-xl-3 col-md-6 mb-4">
@@ -29,7 +74,7 @@
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                 Earnings (Monthly)</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                            <div id="count" class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -107,7 +152,7 @@
 
 
     <!-- Content Row -->
-    <div class="row">
+    <div class="row ">
 
         <!-- Earnings (Monthly) Card Example -->
         <div class="col-xl-3 col-md-6 mb-4">
