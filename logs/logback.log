@@ -1511,3 +1511,73 @@
 [2025-09-24 15:57:52:1231788][https-jsse-nio-8443-exec-17] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/html', given [text/html, image/gif, image/jpeg, */*;q=0.2] and supported [text/plain, */*, application/json, application/*+json]
 [2025-09-24 15:57:52:1231788][https-jsse-nio-8443-exec-17] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["OK"]
 [2025-09-24 15:57:52:1231788][https-jsse-nio-8443-exec-17] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2025-09-26 18:24:27:1677][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 60 mappings in 'requestMappingHandlerMapping'
+[2025-09-26 18:24:27:1717][restartedMain] WARN  o.s.w.s.r.ResourceHandlerUtils - Appended trailing slash to static resource location: file:///c:/smspring/logs/
+[2025-09-26 18:24:27:1718][restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /imgs/**, /logs/**] in 'resourceHandlerMapping'
+[2025-09-26 18:24:27:1774][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2025-09-26 18:24:27:1819][restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2025-09-26 18:30:00:1629][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 60 mappings in 'requestMappingHandlerMapping'
+[2025-09-26 18:30:00:1670][restartedMain] WARN  o.s.w.s.r.ResourceHandlerUtils - Appended trailing slash to static resource location: file:///c:/smspring/logs/
+[2025-09-26 18:30:00:1671][restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /imgs/**, /logs/**] in 'resourceHandlerMapping'
+[2025-09-26 18:30:00:1731][restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2025-09-26 18:30:00:1755][restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2025-09-26 18:30:36:38263][https-jsse-nio-8443-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2025-09-26 18:30:36:38263][https-jsse-nio-8443-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2025-09-26 18:30:36:38263][https-jsse-nio-8443-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2025-09-26 18:30:36:38263][https-jsse-nio-8443-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2025-09-26 18:30:36:38264][https-jsse-nio-8443-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@19756a6c
+[2025-09-26 18:30:36:38264][https-jsse-nio-8443-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@13c054c2
+[2025-09-26 18:30:36:38264][https-jsse-nio-8443-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2025-09-26 18:30:36:38264][https-jsse-nio-8443-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2025-09-26 18:30:36:38276][https-jsse-nio-8443-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2025-09-26 18:30:36:38277][https-jsse-nio-8443-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to edu.sm.controller.MainController#main(Model)
+[2025-09-26 18:30:36:38291][https-jsse-nio-8443-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2025-09-26 18:30:36:38292][https-jsse-nio-8443-exec-3] DEBUG o.s.web.servlet.view.JstlView - View name [index], model {}
+[2025-09-26 18:30:36:38294][https-jsse-nio-8443-exec-3] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [/views/index.jsp]
+[2025-09-26 18:30:37:38746][https-jsse-nio-8443-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2025-09-26 18:30:37:38759][https-jsse-nio-8443-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/.well-known/appspecific/com.chrome.devtools.json", parameters={}
+[2025-09-26 18:30:37:38760][https-jsse-nio-8443-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2025-09-26 18:30:37:38762][https-jsse-nio-8443-exec-5] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2025-09-26 18:30:37:38765][https-jsse-nio-8443-exec-5] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+[2025-09-26 18:30:37:38766][https-jsse-nio-8443-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2025-09-26 18:30:37:38767][https-jsse-nio-8443-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2025-09-26 18:30:37:38767][https-jsse-nio-8443-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2025-09-26 18:30:37:38778][https-jsse-nio-8443-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+[2025-09-26 18:30:37:38779][https-jsse-nio-8443-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Fri Sep 26 18:30:37 KST 2025, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+[2025-09-26 18:30:37:38803][https-jsse-nio-8443-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2025-09-26 18:30:39:40759][https-jsse-nio-8443-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/login", parameters={}
+[2025-09-26 18:30:39:40760][https-jsse-nio-8443-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to edu.sm.controller.LoginController#add(Model)
+[2025-09-26 18:30:39:40763][https-jsse-nio-8443-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2025-09-26 18:30:39:40763][https-jsse-nio-8443-exec-1] DEBUG o.s.web.servlet.view.JstlView - View name [index], model {center=login, left=left}
+[2025-09-26 18:30:39:40763][https-jsse-nio-8443-exec-1] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [/views/index.jsp]
+[2025-09-26 18:30:39:40810][https-jsse-nio-8443-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2025-09-26 18:30:39:40824][https-jsse-nio-8443-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/.well-known/appspecific/com.chrome.devtools.json", parameters={}
+[2025-09-26 18:30:39:40824][https-jsse-nio-8443-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2025-09-26 18:30:39:40824][https-jsse-nio-8443-exec-3] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2025-09-26 18:30:39:40825][https-jsse-nio-8443-exec-3] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+[2025-09-26 18:30:39:40825][https-jsse-nio-8443-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2025-09-26 18:30:39:40825][https-jsse-nio-8443-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2025-09-26 18:30:39:40825][https-jsse-nio-8443-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2025-09-26 18:30:39:40826][https-jsse-nio-8443-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+[2025-09-26 18:30:39:40826][https-jsse-nio-8443-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Fri Sep 26 18:30:39 KST 2025, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+[2025-09-26 18:30:39:40827][https-jsse-nio-8443-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[2025-09-26 18:30:41:42845][https-jsse-nio-8443-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - POST "/loginimpl", parameters={masked}
+[2025-09-26 18:30:41:42845][https-jsse-nio-8443-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to edu.sm.controller.LoginController#loginimpl(Model, String, String, HttpSession)
+[2025-09-26 18:30:41:43076][https-jsse-nio-8443-exec-6] DEBUG o.s.web.servlet.view.RedirectView - View name [redirect:], model {}
+[2025-09-26 18:30:41:43077][https-jsse-nio-8443-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 302 FOUND
+[2025-09-26 18:30:41:43080][https-jsse-nio-8443-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+[2025-09-26 18:30:41:43080][https-jsse-nio-8443-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to edu.sm.controller.MainController#main(Model)
+[2025-09-26 18:30:41:43081][https-jsse-nio-8443-exec-8] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+[2025-09-26 18:30:41:43081][https-jsse-nio-8443-exec-8] DEBUG o.s.web.servlet.view.JstlView - View name [index], model {}
+[2025-09-26 18:30:41:43081][https-jsse-nio-8443-exec-8] DEBUG o.s.web.servlet.view.JstlView - Forwarding to [/views/index.jsp]
+[2025-09-26 18:30:41:43087][https-jsse-nio-8443-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2025-09-26 18:30:41:43099][https-jsse-nio-8443-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/.well-known/appspecific/com.chrome.devtools.json", parameters={}
+[2025-09-26 18:30:41:43099][https-jsse-nio-8443-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2025-09-26 18:30:41:43099][https-jsse-nio-8443-exec-5] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+[2025-09-26 18:30:41:43099][https-jsse-nio-8443-exec-5] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+[2025-09-26 18:30:41:43100][https-jsse-nio-8443-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+[2025-09-26 18:30:41:43101][https-jsse-nio-8443-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[2025-09-26 18:30:41:43101][https-jsse-nio-8443-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2025-09-26 18:30:41:43101][https-jsse-nio-8443-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+[2025-09-26 18:30:41:43102][https-jsse-nio-8443-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Fri Sep 26 18:30:41 KST 2025, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+[2025-09-26 18:30:41:43102][https-jsse-nio-8443-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
